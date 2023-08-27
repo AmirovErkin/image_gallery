@@ -7,16 +7,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Picture</title>
-    <link rel="stylesheet" href="{% static 'gallery/static.css' %}">
+    <link rel="stylesheet" href="{% static 'gallery/style.css' %}">
 </head>
 <body>
     <div class="gallery">
       {% for picture in pictures %}
         <div class="gallery-item">
-          <img src="{{ picture.images.url }}" alt="Image">
+          <img class="image" src="{{ picture.images.url }}" alt="Image">
           <h3>{{ picture.title }}</h3>
           <p>Author: {{ picture.author|title }}</p>
-          <p>{{ picture.date|date:"d-m-y  H:i" }}</p>
+          <p class="data">{{ picture.date|date:"d-m-y  H:i" }}</p>
 
         </div>
       {% endfor %}

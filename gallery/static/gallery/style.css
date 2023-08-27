@@ -1,0 +1,46 @@
+    body {
+      background-color: gray;
+    }
+
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      font-family: Century;
+    }
+
+    .gallery-item {
+      width: 30%;
+      margin-bottom: 10%;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: 0 2px 4px white;
+      background-color: white;
+    }
+
+    .gallery-item img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .gallery-item .info {
+      margin-top: 10px;
+      font-size: 14px;
+      text-align: center;
+    }
+
+    .data {
+      font-family: Gigi;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .image {
+      width: 250px;
+      height: 250px;
+      background-size: cover;
+    }
